@@ -28,6 +28,7 @@ export class LoginPage implements OnInit {
         localStorage.setItem('rol', res.rol);
         this.router.navigate(['/tabs']);
       },
+      
       err => {
         console.log(err.error);
         this.error= err;
