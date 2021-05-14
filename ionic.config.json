@@ -1,7 +1,8 @@
 {
   "name": "CONFIO",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular",
   "id": "26c04083"
