@@ -8,15 +8,15 @@ import { AppComponent } from '../app.component';
   providedIn: 'root'
 })
 export class AuthService {
-  private url = 'http://localhost:3130/api'
+  private urlAuth = 'http://localhost:3130/api'
   
   constructor(private http: HttpClient, private router: Router) { }
 
   signup(usuario){
-    return this.http.post<any>(this.url + '/registrar', usuario);
+    return this.http.post<any>(this.urlAuth + '/registrar', usuario);
   }
 
   login(usuario){
-    return this.http.post<any>(this.url + '/ingresar', usuario);
+    return this.http.post<any>(this.urlAuth + '/ingresar', usuario);
   }
 }
