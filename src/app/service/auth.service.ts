@@ -8,8 +8,7 @@ import { AppComponent } from '../app.component';
   providedIn: 'root'
 })
 export class AuthService {
-  private urlAuth = 'http://localhost:3130/api'
-  
+  private urlAuth = 'https://confioapp.herokuapp.com/auth'
   constructor(private http: HttpClient, private router: Router) { }
 
   signup(usuario){
