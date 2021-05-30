@@ -8,7 +8,7 @@ import { AppComponent } from '../app.component';
   providedIn: 'root'
 })
 export class AuthService {
-  private urlAuth = 'http://localhost:3130/api'
+  private urlAuth = 'http://localhost:3130/auth'
   
   constructor(private http: HttpClient, private router: Router) { }
 
